@@ -1,0 +1,384 @@
+/* Global StyleSheet - mobile first always in order, then desktop thereafter in the stylesheet. */
+:root {
+    --some-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+}
+
+
+
+
+
+/* Overrides Material UI */
+.MuiContainer-root { padding-right: 0px!important; padding-right: 0px!important;  }
+@media only screen and (max-device-width: 676px) {
+  .MuiContainer-root { padding-left: 0px!important; padding-right: 0px!important;  }
+}
+.MuiDrawer-paper {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.MuiAvatar-circle:hover, .MuiAvatar-circle:active {
+	border: 2px solid #F3535B;
+}
+
+
+
+/* Next.js - Pre-rendered page pop out */
+#container { display: none!important; }
+
+
+
+
+
+
+/* Always Fit on screen - guide: https://medium.com/quick-code/building-a-chat-application-using-flexbox-e6936c3057ef */
+/* @TODO, set this on mobile in javascript */
+@media only screen and (max-device-width: 676px) {
+  #SendContainer {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .chatWrapper {
+    /* height: 500px!important; */ /* @TODO, relegate to javascript to set height */
+    overflow: auto;
+
+  }
+}
+
+
+
+
+/* Header */
+.App-header {
+
+}
+
+@media only screen and (max-device-width: 676px) { /* Right side of profile image */
+  #HeaderContainer .MuiBadge-root { margin-right: 50px; }
+}
+
+.MuiBackdrop-root {
+  background: none!important;
+}
+.header-mobile-responsive {
+  background: #f1f1f6;
+}
+
+.header-mobile-responsive .mob-search-field {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #f1f1f6;
+	left: 0;
+	right: 0;
+	/* top: 46px; */
+	z-index: 999;
+	padding: 40px 30px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.header-mobile-responsive .mob-search-field .mob-header-nav {
+	float: left;
+	width: 100%;
+	padding: 0;
+	order: 2;
+	/* margin-top: 55px; */
+}
+
+.header-mobile-responsive .mob-search-field #mob_search_mini_form .btn-default-mobile {
+	margin-left: 1px;
+}
+.header-mobile-responsive .mob-search-field .mob-header-nav ul li a {
+	font-size: 17px;
+	line-height: 21px;
+	color: #191919;
+	font-family: 'Stratos-Medium';
+	text-decoration:none;
+}
+.header-mobile-responsive .mob-search-field .mob-header-nav li {
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+.form-inline.d-flex.justify-content-center.md-form.form-sm input {
+	width: 100%;
+	left: 0;
+}
+.header-mobile-responsive .mob-search-field .mob-header-nav li .dropdown-toggle {
+	width: auto;
+	background: transparent;
+	border: none;
+	padding: 0;
+	font-size: 15px;
+	line-height: 19px;
+	color: #191919 !important;
+	font-family: 'Stratos-Medium';
+	box-shadow: none;
+	display: flex;
+	align-items: center;
+	opacity:1;
+}
+.header-mobile-responsive .mob-search-field #mob_search_mini_form .btn-default-mobile {
+	margin-left: 1px;
+	background: #f55157;
+	box-shadow: none;
+	color: #fff;
+	border-radius: 3px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	font-family: 'Stratos-Medium';
+	font-size: 13px;
+	line-height: 16px;
+	height: 32px;
+	width: 113px;
+}
+.header-mobile-responsive .mob-search-field #mob_search_mini_form .btn-default-mobile:hover{
+	outline:none;
+	border:none;
+	opacity:0.8;
+}
+.header-mobile-responsive .mob-search-field .mob-header-nav li .dropdown-toggle img {
+	margin-right: 4px;
+	height: 15px;
+}
+#mob_search_mini_form .dropdown.search-tabing-mobile .btn-primary.dropdown-custombutton-mobile span {
+	transform: translateY(0px) rotate(0deg);
+	background: transparent;
+	width: auto;
+	height: auto;
+}
+.header-mobile-responsive .mob-search-field #mob_search_mini_form {
+	width: 100%;
+	order: 1;
+	position: relative;
+}
+
+.header-mobile-responsive .mob-search-field #mob_search_mini_form #mobsearchboxcustom {
+	width: 100%;
+	left: 0;
+	position: absolute;
+	border: 1px solid #E0E0E0;
+	width: 100%;
+	height: 37px;
+	border-radius: 3px;
+	padding-left: 5px;
+	position: relative;
+	left: 0px;
+	font-family: 'Stratos-Medium';
+	color: #191919;
+	opacity: 1;
+	top: 0px;
+	box-shadow: none;
+	margin-bottom: 0;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	font-size: 13px;
+	line-height: 16px;
+	padding-left: 60px;
+	background: #fff;
+}
+
+.header-mobile-responsive .mob-search-field #mob_search_mini_form {
+	justify-content: flex-start !important;
+}
+
+
+
+
+
+
+@media only screen and (max-device-width: 676px) {
+  .logoSvg {
+    height: 24px;
+  }
+  .MuiToolbar-regular {
+    min-height: 46px!important;
+    height: 46px!important;
+  }
+}
+@media only screen and (min-device-width: 676px) {
+  .logoSvg {
+    height: 20.5938px;
+  }
+  .MuiToolbar-regular {
+    min-height: 76px!important;
+    height: 76px!important;
+  }
+}
+
+.showcart::before {
+	content: "" !important;
+	position: absolute;
+	top: 20px;
+	width: 16px;
+	height: 17px;
+	background: url(/pub/media/minicart-svg.png) no-repeat top center;
+}
+.miniCartCircle {
+	position: relative;
+}
+.miniCartNumber {
+    background: #F55157;
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+	color: #FFFFFF;
+}
+
+/* Hamburger Toggle button */
+.toggleButton span:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.toggleButton span {
+	background: rgb(225, 149, 22) none repeat scroll 0% 0%;
+	display: block;
+	width: 21px;
+	height: 3px;
+	border-radius: 1px;
+	background: #191919;
+	transition: all 0.4s ease 0s;
+}
+
+.toggleButton span:nth-child(2) {
+	display: none;
+}
+
+.toggleButton.active span:first-child {
+	transform: translateY(4px) rotate(45deg);
+	width: 21px;
+	height: 3px;
+	border-radius: 0px;
+}
+.toggleButton.active span:nth-child(3) {
+	transform: translateY(-4px) rotate(-45deg);
+  width: 21px;
+  height: 3px;
+  border-radius: 0px;
+}
+.toggleButton {
+	cursor: pointer;
+	margin-right: 0;
+	margin-left: 11px;
+	display: flex;
+	flex-direction: column;
+	-moz-box-pack: center;
+	justify-content: flex-start;
+	justify-items: flex-start;
+	float: left;
+	margin-top: 0;
+	transition: all 0.4s ease 0s;
+	align-items: center;
+	width: 24px;
+	padding: o;
+}
+
+
+
+
+
+.BodyContainer {
+  height: 100%;
+}
+
+#HeaderContainer {
+}
+
+#MessageContainer {
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+#SideBar {
+}
+
+/* @TODO move to header.js when you can */
+@media only screen and (min-device-width: 676px) {
+  .sideDraw {
+    flex-grow: 0;
+  }
+}
+@media only screen and (max-device-width: 676px) {
+  .sideDraw {
+    flex-grow: 1;
+  }
+}
+
+
+
+.MessageList {
+  flex: 1; /* constrain to area rather than spill over */
+  background-color: #ffffff;
+  overflow: scroll;
+  padding-right: 20px;
+  height: 100%;
+}
+
+.chatWrapper {
+  display:flex;
+  flex-direction: row;
+  height: calc(100vh - 180px);
+}
+
+.contentBody {
+  flex: 1 1 auto;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+
+
+}
+
+.App {
+  flex: 0;
+  height: 100%;
+}
+.active_avatar {
+    background-color: #dcdcdc85;
+}
+.active_avatar:hover {
+    cursor: pointer;
+}
+span.MuiBadge-root {
+    cursor: pointer;
+}
+.MuiList-padding {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.active_avatar .MuiAvatar-circle {
+	border: 2px solid red;
+}
+.MuiList-root.MuiList-padding {
+    cursor: pointer;
+}
+/*
+.App, .content {
+  flex: 1 1 auto;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+*/

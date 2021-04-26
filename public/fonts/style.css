@@ -1,0 +1,91 @@
+
+@font-face {
+    font-family: 'Stratos-Medium';
+    src: url('Stratos-Medium.eot');
+    src: url('Stratos-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Stratos-Medium.woff2') format('woff2'),
+        url('Stratos-Medium.woff') format('woff'),
+        url('Stratos-Medium.ttf') format('truetype'),
+        url('Stratos-Medium.svg#Stratos-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Extrabold';
+    src: url('FuturaPT-ExtraBold.eot');
+    src: url('FuturaPT-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-ExtraBold.woff2') format('woff2'),
+        url('FuturaPT-ExtraBold.woff') format('woff'),
+        url('FuturaPT-ExtraBold.ttf') format('truetype'),
+        url('FuturaPT-ExtraBold.svg#FuturaPT-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskDisp Pro 65';
+    src: url('NHaasGroteskDSPro-65Md.eot');
+    src: url('NHaasGroteskDSPro-65Md.eot?#iefix') format('embedded-opentype'),
+        url('NHaasGroteskDSPro-65Md.woff2') format('woff2'),
+        url('NHaasGroteskDSPro-65Md.woff') format('woff'),
+        url('NHaasGroteskDSPro-65Md.ttf') format('truetype'),
+        url('NHaasGroteskDSPro-65Md.svg#NHaasGroteskDSPro-65Md') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskDisp Pro 75';
+    src: url('NHaasGroteskDSPro-75Bd.eot');
+    src: url('NHaasGroteskDSPro-75Bd.eot?#iefix') format('embedded-opentype'),
+        url('NHaasGroteskDSPro-75Bd.woff2') format('woff2'),
+        url('NHaasGroteskDSPro-75Bd.woff') format('woff'),
+        url('NHaasGroteskDSPro-75Bd.ttf') format('truetype'),
+        url('NHaasGroteskDSPro-75Bd.svg#NHaasGroteskDSPro-75Bd') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Extrabold italic';
+    src: url('FuturaPT-ExtraBoldObl.eot');
+    src: url('FuturaPT-ExtraBoldObl.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-ExtraBoldObl.woff2') format('woff2'),
+        url('FuturaPT-ExtraBoldObl.woff') format('woff'),
+        url('FuturaPT-ExtraBoldObl.ttf') format('truetype'),
+        url('FuturaPT-ExtraBoldObl.svg#FuturaPT-ExtraBoldObl') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskDisp Pro 55';
+    src: url('NHaasGroteskDSPro-55Rg.eot');
+    src: url('NHaasGroteskDSPro-55Rg.eot?#iefix') format('embedded-opentype'),
+        url('NHaasGroteskDSPro-55Rg.woff2') format('woff2'),
+        url('NHaasGroteskDSPro-55Rg.woff') format('woff'),
+        url('NHaasGroteskDSPro-55Rg.ttf') format('truetype'),
+        url('NHaasGroteskDSPro-55Rg.svg#NHaasGroteskDSPro-55Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos-SemiBold';
+    src: url('Stratos-SemiBold.eot');
+    src: url('Stratos-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Stratos-SemiBold.woff2') format('woff2'),
+        url('Stratos-SemiBold.woff') format('woff'),
+        url('Stratos-SemiBold.ttf') format('truetype'),
+        url('Stratos-SemiBold.svg#Stratos-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
